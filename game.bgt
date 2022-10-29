@@ -1,0 +1,28 @@
+void main()
+{
+sound logo;
+sound exit;
+sound ok;
+sound prank;
+wait(600);
+show_game_window("Prank War, version 0.1, beta");
+wait(1000);
+alert("Welcome", "You are my first game tester. Be enjoy.");
+logo.load("sounds/logo.ogg");
+logo.play();
+wait(5000);
+alert("","Press enter the start");
+ok.load("sounds/ok.ogg");
+ok.play();
+wait(2000);
+string finish="You have been pranked";
+alert("Hey Hey", finish);
+hide_game_window();
+logo.stop();
+exit.load("sounds/exit.wav");
+exit.play();
+wait(1300);
+prank.load("sounds/prank.wav");
+prank.play();
+wait(5000);
+}
